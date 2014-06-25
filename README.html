@@ -1,0 +1,34 @@
+<h1>LIBSTRING library</h1>
+
+<h2>Library of string manipulating functions</h2>
+
+<p>*v1.0²</p>
+
+<p>24.06.2014    </p>
+
+<p>This library was originally built for string functions in my <em>pca</em> statistical
+program for principal component analysis. PCA is my first program written in C,
+and therefore <em>libstring</em> is my first library written in this language.</p>
+
+<h2>FUNCTIONS &amp; FEATURES</h2>
+
+<h3>tokenize</h3>
+
+<p>This function splits a string into words or substrings.
+This is a small exercise to learn C. The same function in Perl would probably
+take only a couple of lines of code. </p>
+
+<p><em>Tokenize</em> returns an array of strings pointing to the words in the input buffer. The number of strings
+is returned as an *int parameter passed by reference.</p>
+
+<p>Note that the source string <strong>buffer</strong> (<em>*buf</em>) <strong>is modified:</strong> a null character is inserted at the end of each word or quoted string.</p>
+
+<h4>Syntax</h4>
+
+<p>char**    <strong>tokenize</strong>(<em>char</em> *buffer, <em>int</em> *word_count);</p>
+
+<h3>Log History</h3>
+
+<ul>
+<li>v1    implements <em>tokenize()</em></li>
+</ul>

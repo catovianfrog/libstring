@@ -3,7 +3,7 @@ LIBSTRING library
 Library of string manipulating functions
 ---------------------------------------------
 
-*v1.0²
+*v1.0*
 
 24.06.2014    
 

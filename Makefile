@@ -1,9 +1,9 @@
 CFLAGS=-Wall -g -DNDBUG -O0
 LDFLAGS = -lm
 
-all: 	tokenize.c libstring.o
-	gcc $(CFLAGS)  -c tokenize.c  $(LDFLAGS)   
-	gcc $(CFLAGS)  tokenize.o libstring.o -o tokenize  $(LDFLAGS)   
+all: 	test_lib.c libstring.o
+	gcc $(CFLAGS)  -c test_lib.c  $(LDFLAGS)   
+	gcc $(CFLAGS)  test_lib.o libstring.o -o test  $(LDFLAGS)   
 
 libstring.o:	libstring.c
 	gcc $(CFLAGS)  -c libstring.c
